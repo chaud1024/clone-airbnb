@@ -9,6 +9,7 @@ import CategoryInput from "../CategoryInput";
 import Heading from "../Heading";
 import Counter from "../inputs/Counter";
 import CountrySelect from "../inputs/CountrySelect";
+import ImageUpload from "../inputs/ImageUpload";
 import Modal from "./Modal";
 
 enum STEPS {
@@ -155,6 +156,18 @@ const RentModal = () => {
           value={bathroomCount}
           onChange={(value) => setCustomValue("bathroomCount", value)}
         />
+      </div>
+    );
+  }
+
+  if (step === STEPS.IMAGES) {
+    bodyContent = (
+      <div className="flex flex-col gap-8">
+        <Heading
+          title="Add a photo of your place."
+          subTitle="Show guests what your place looks like!"
+        />
+        <ImageUpload />
       </div>
     );
   }
