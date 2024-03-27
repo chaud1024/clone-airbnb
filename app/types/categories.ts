@@ -6,3 +6,11 @@ export interface Category {
   description?: string;
   selected?: boolean;
 }
+
+export interface CountrySelectValue {
+  flag: string;
+  label: string;
+  latlng: number[];
+  region: string;
+  value: string;
+}
