@@ -37,7 +37,9 @@ const RegisterModal = () => {
     axios
       .post("/api/register", data)
       .then(() => {
+        toast.success("Successfully registered!");
         registerModal.onClose();
+        loginModal.onOpen();
       })
       .catch((error) => {
         toast.error("Something went wrong. Try it later.");
@@ -59,7 +61,7 @@ const RegisterModal = () => {
         label="Email"
         id="email"
         disabled={isLoading}
-        resister={register}
+        register={register}
         errors={errors}
         required
       />
@@ -67,7 +69,7 @@ const RegisterModal = () => {
         label="Name"
         id="name"
         disabled={isLoading}
-        resister={register}
+        register={register}
         errors={errors}
         required
       />
@@ -76,7 +78,7 @@ const RegisterModal = () => {
         label="Password"
         id="password"
         disabled={isLoading}
-        resister={register}
+        register={register}
         errors={errors}
         required
       />
