@@ -16,8 +16,9 @@ const Home = async ({ searchParams }: HomeProps) => {
   let listings: any = [];
   if (searchParams && searchParams.userId) {
     listings = await getListings(searchParams);
+  } else {
+    listings = await getListings({});
   }
-
   if (listings.length === 0) {
     return (
       <ClientOnly>
