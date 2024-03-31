@@ -7,12 +7,16 @@ import ListingCard from "./components/listing/ListingCard";
 import { SafeListing } from "./types";
 
 interface HomeProps {
-  searchParams: IListingsParams;
+  searchParams?: IListingsParams;
 }
 
 const Home = async ({ searchParams }: HomeProps) => {
-  const listings = await getListings(searchParams);
   const currentUser = await getCurrentUser();
+
+  let listings: any = [];
+  if (searchParams && searchParams.userId) {
+    listings = await getListings(searchParams);
+  }
 
   if (listings.length === 0) {
     return (
