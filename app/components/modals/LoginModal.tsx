@@ -64,7 +64,7 @@ const LoginModal = () => {
         label="Email"
         id="email"
         disabled={isLoading}
-        resister={register}
+        register={register}
         errors={errors}
         required
       />
@@ -73,7 +73,7 @@ const LoginModal = () => {
         label="Password"
         id="password"
         disabled={isLoading}
-        resister={register}
+        register={register}
         errors={errors}
         required
       />
