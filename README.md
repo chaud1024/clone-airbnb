@@ -1,36 +1,21 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## Project Overview:
 
-## Getting Started
+- **Tech Stack**: Utilizes Next.js with App Router, React, Tailwind CSS, Prisma, MongoDB, and NextAuth for authentication.
+- **Design**: Tailwind CSS for sleek design and ensuring full responsiveness across devices.
+- **Authentication**: Provides credential authentication, Google authentication, and Github authentication.
+- **Image Upload**: Image upload using Cloudinary CDN for efficient storage and retrieval.
+- **Form Validation**: Using react-hook-form for client-side form validation and handling.
+- **Error Handling**: Implements react-toast for server error handling, ensuring a smooth user experience.
+- **Calendars**: Using react-date-range for selecting and displaying available dates.
+- **Reservation**: Implements a reservation system, allowing guests and properties' owners to cancel reservations.
+- **Property Management**: Enables creation and deletion of properties, including pricing calculation.
+- **Advanced Search**: Employs an advanced search algorithm by category, date range, map location, number of guests, rooms, and bathrooms.
+- **Favorites System**: Offers a favorites system for users to save preferred properties.
+- **Shareable URLs**: Generates shareable URLs with filter parameters for easy sharing and viewing by others.
+- **API Routes**: Demonstrates how to write POST and DELETE routes in route handlers (app/api).
+- **Direct Database Access**: Shows how to fetch data in server react components by directly accessing the database without using APIs.
+- **Component Relations**: Addresses handling relations between server and child components effectively.
 
-First, run the development server:
-
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+### Reference Video [Code With Antonio]
+[//]:
+[Code With Antonio]: <https://www.youtube.com/watch?v=c_-b_isI4vg&ab_channel=CodeWithAntonio>
