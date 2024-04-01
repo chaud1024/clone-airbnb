@@ -17,5 +17,5 @@
 - **Component Relations**: Addresses handling relations between server and child components effectively.
 
 ### Reference Video [Code With Antonio]
-[//]:
+[//]: #
 [Code With Antonio]: <https://www.youtube.com/watch?v=c_-b_isI4vg&ab_channel=CodeWithAntonio>
